@@ -14,7 +14,7 @@ build:
         code: |-
           yum list available
     - script:
-        name: yum -y install gcc php php-devel
+        name: yum -y install gcc php php-devel rpm-build which
         code: |-
           yum -y install php php-devel
     - script:
@@ -25,6 +25,10 @@ build:
         name: php --version
         code: |-
           php --version
+    - script:
+        name: which phpize
+        code: |-
+          which phpize
     - script:
         name: which make
         code: |-
