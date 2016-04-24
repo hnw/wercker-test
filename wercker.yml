@@ -5,3 +5,15 @@ build:
         name: uname
         code: |-
           uname -a
+    - script:
+        name: yum list installed
+        code: |-
+          yum list installed
+    - script:
+        name: which php
+        code: |-
+          which php
+    - script:
+        name: php --version
+        code: |-
+          php --version
