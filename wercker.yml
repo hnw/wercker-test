@@ -10,6 +10,14 @@ build:
         code: |-
           yum list installed
     - script:
+        name: yum list available
+        code: |-
+          yum list available
+    - script:
+        name: yum install php
+        code: |-
+          yum install php
+    - script:
         name: which php
         code: |-
           which php
