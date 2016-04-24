@@ -16,7 +16,7 @@ build:
     - script:
         name: yum -y install gcc php php-devel rpm-build which
         code: |-
-          yum -y install php php-devel
+          yum -y install php php-devel rpm-build which
     - script:
         name: which php
         code: |-
